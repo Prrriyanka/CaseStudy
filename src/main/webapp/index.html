@@ -1,0 +1,206 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+
+<style>
+body {
+	/* background-image: linear-gradient(135deg, #FAB2FF 10%, rgb(219, 255, 255) 100%);
+	 */
+	
+background-image:url("img/bgindex.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+	padding: 2% 13%;
+	display: flex;
+	align-items: center;
+}
+
+.box{
+flex: 1;}
+
+.box:first-child {
+	margin-right:10%;
+	 min-height:auto;
+     height: 450px;
+	 background-image: url("img/vec.png"); 
+	 background-size: contain;
+  } 
+
+	
+
+.techno {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	/* color: #00dbde; */
+	color:#ffffff;
+	font-size: auto;
+}
+
+.ptag {
+	color: #fff;
+	font-size: auto;
+	font-family: 'Catamaran', sans-serif;
+	line-height: 1.4;
+}
+
+.boldptag{
+font-weight: bold;
+}
+
+
+/* CSS */
+.button-77 {
+	align-items: center;
+	appearance: none;
+	background-clip: padding-box;
+	background-color: initial;
+	background-image: none;
+	border-style: none;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	flex-direction: row;
+	flex-shrink: 0;
+	font-family: Eina01, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	justify-content: center;
+	line-height: 24px;
+	margin: 0;
+	min-height: 50px;
+	outline: none;
+	overflow: visible;
+	padding: 19px 26px;
+	pointer-events: auto;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	width: 30%;
+	word-break: keep-all;
+	z-index: 0;
+}
+
+@media ( min-width : 768px) {
+	.button-77 {
+		padding: 10px 10px;
+	}
+}
+
+.button-77:before, .button-77:after {
+	border-radius: 80px;
+}
+
+.button-77:before {
+	background-color: #00dbde;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -2;
+}
+
+.button-77:after {
+	background-color: initial;
+	background-image: linear-gradient(92.83deg, #fc00ff 0, #00dbde 100%);
+	bottom: 4px;
+	content: "";
+	display: block;
+	left: 4px;
+	overflow: hidden;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	transition: all 100ms ease-out;
+	z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	transition-timing-function: ease-in;
+}
+
+.button-77:active:not(:disabled) {
+	color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #00dbde 0, #00dbde 100%);
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	top: 4px;
+}
+
+.button-77:disabled {
+	cursor: default;
+	opacity: .24;
+}
+
+
+ .buttons {
+width: auto;
+margin: 0 auto;
+display: inline;}
+
+.reg {
+	margin-right: 10%;
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+	<div class="box"> 
+			
+		</div>
+		<div class="box">
+			<h1 class="techno">IT Solutions & Business Services Company</h1>
+			<p class="ptag">	
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				<br>
+				<br>
+				<p class="ptag boldptag">Don't have an account?Create Your Account now! 
+				<br>
+				or Login into Existing account.</p>
+			</p>
+			<div class="buttons">
+				<a href="RegistrationPage.html">
+					<button class="button-77 reg">Register</button>
+				</a> 
+				<a href="LoginPage.jsp">
+					<button class="button-77 login"> Login </button>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+
+</html>

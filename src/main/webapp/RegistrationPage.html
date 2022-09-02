@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+	function fieldsValidate(event) {
+		var name = document.forms.RegForm.userName.value;
+		var email = document.forms.RegForm.email.value;
+		var phone = document.forms.RegForm.phoneno.value;
+		var password = document.forms.RegForm.passWord.value;
+		var cpassword = document.forms.RegForm.cpassWord.value;
+
+
+		var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.
+		var regPhone = /^\d{10}$/; // Javascript reGex for Phone Number validation.
+		var regPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,20}$/;
+
+		if (name == "" || !name.match(/\w/)) {
+			event.preventDefault();
+			window.alert("UserName cannot be blank.");
+			name.focus();
+		}
+		
+
+		if (email == "" || !regEmail.test(email)) {
+			event.preventDefault();
+			window.alert("Please enter a valid e-mail address.");
+			email.focus();
+		}
+
+		if (password == "" || !regPass.test(password)) {
+			event.preventDefault();
+			alert("Please follow Password rules \nDigit must occur at least once. \nLower case alphabet must occur at least once. \nUpper case alphabet that must occur at least once. \nSpecial character that must occur at least once. \nSpaces are not allowed in the Password. \nAt least 8 characters and at most 20 characters.");
+			password.focus();
+		}
+		
+		if (password !=cpassword ) {
+			event.preventDefault();
+			alert("Password & Confirm password not matching");
+			password.focus();
+		}
+
+
+		if (phone == "" || !regPhone.test(phone)) {
+			event.preventDefault();
+			alert("Please enter valid phone number.");
+			phone.focus();
+		}
+
+		return true;
+	}
+</script>
+
+<style>
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: HelveticaNeue-Light;
+	color: #333333;
+	/* background-color: rgb(0, 0, 0, 0.3); */
+}
+
+.form {
+	justify-content: center;
+	align-items: center;
+	margin: 10%;
+}
+
+.container {
+	padding: 2% 13%;
+	display: flex;
+	background-size: cover;
+	/* background-color: #FFF;
+ */	margin: auto;
+	
+}
+
+.box{
+	flex: 1;
+    
+	/* background-color: rgb(202, 254, 255); */
+	/* max-width: 500px;
+	margin: auto;
+	height: auto;
+	border-radius: 12px;
+	padding: 5px; */
+}
+
+.box:first-child {
+    margin-right: 0px;
+    background-color:#fff;
+/*     background-color: black;
+ */    background-image:
+		url("https://img.freepik.com/free-vector/sign-page-abstract-concept-illustration_335657-2242.jpg?w=740&t=st=1659611460~exp=1659612060~hmac=72f21d210d881c5edb10fa53e56195ea57be6cbbcb62e5e232c4a746da83ad99");
+		background-position: center;
+		background-size: cover;
+} 
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	opacity: 0.4 !important;
+}
+
+.techno {
+	font-family: HelveticaNeue-Light;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ptag {
+	font-size: medium;
+	font-family: serif;
+}
+
+/* CSS */
+.button-77 {
+	background-clip: padding-box;
+	background-color: initial;
+	background-image: none;
+	border-style: none;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	padding: 7% 39%;
+	font-family: Eina01, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	min-height: 50px;
+	outline: none;
+	overflow: visible;
+	margin-left: auto;
+	pointer-events: auto;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	word-break: keep-all;
+	z-index: 0;
+}
+
+@media ( max-width : 768px) {
+	.button-77 {
+		padding: 15px 100px;
+	}
+}
+
+.button-77:before, .button-77:after {
+	border-radius: 80px;
+}
+
+.button-77:before {
+	background-color: #00dbde;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -2;
+}
+
+.button-77:after {
+	background-color: initial;
+	background-image: linear-gradient(92.83deg, #fc00ff 0, #00dbde 100%);
+	bottom: 4px;
+	content: "";
+	display: block;
+	left: 4px;
+	overflow: hidden;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	transition: all 100ms ease-out;
+	z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	transition-timing-function: ease-in;
+}
+
+.button-77:active:not(:disabled) {
+	color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, .2),
+		rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #00dbde 0, #00dbde 100%);
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	top: 4px;
+}
+
+.button-77:disabled {
+	cursor: default;
+	opacity: .24;
+}
+
+.label {
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.input100 {
+	/* background-color: rgb(128, 128, 255); */
+	border: 1px solid rgb(128, 128, 255);
+	float: left;
+	margin: auto;
+	margin-bottom: 25px;
+	width: 400px;
+	padding: 5px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	width: -webkit-fill-available;
+}
+
+.forgot-pass {
+	text-align: right;
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<div class="container">
+		 <div class="box"> 
+			
+		</div>
+		<div class="box">
+			<h1 class="techno">Registration Form</h1>
+			<form class="form" name="RegForm"
+				onsubmit="return fieldsValidate(event)" action="register"
+				method="post">
+
+				<label for="userName">User Name</label> <br> 
+				<input
+					class="input100" type="text" name="userName" id="userName"
+					placeholder="Enter your username" > <br> <br> 
+					<label
+					for="pass">Password</label> <br> <input class="input100"
+					type="password" name="passWord" id="pass"
+					placeholder="Enter your password"> <br> <br> 
+					
+					<label
+					for="pass">Confirm Password</label> <br> <input class="input100"
+					type="password" name="cpassWord" id="cpass"
+					placeholder="Re-enter your password"> <br> <br>
+					
+					<label
+					for="email">Email</label> <br> <input class="input100"
+					type="email" name="email" id="email" placeholder="Enter your Email">
+
+				<br> <br> <label for="phone">Contact no</label> <br>
+				<input class="input100" type="number" name="phoneno" id="phone"
+					placeholder="Enter your contact no"> <br> <br> <br>
+
+
+
+				<br>
+				<br>
+				<button class="button-77">Register</button>
+
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

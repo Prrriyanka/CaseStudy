@@ -1,0 +1,227 @@
+.body {
+	margin: 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f44336;
+}
+
+li {
+	float: left;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 18px 20px;
+	text-decoration: none;
+	font-size: larger;
+	font-family: sans-serif;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+}
+
+
+li.dropdown {
+	/* position: relative; */
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	ul.topnav li.right, ul.topnav li {
+		float: none;
+	}
+}
+
+.sidebar {
+	/* height: 100%; */
+	height: auto;
+	width: 230px;
+	position: absolute;
+	z-index: 1;
+	top: auto;
+	left: 0;
+	background-color: white;
+	overflow-x: hidden;
+	/* padding-top: 16px; */
+}
+
+.sidebar a {
+	padding: 15px 8px 15px 28px;
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+	display: block;
+	/* border-style: solid; */
+}
+
+.sidebar a:hover {
+	background-color: #cc1855
+}
+
+.container {
+	position: absolute;
+	height: 100%;
+	
+	margin-left: 230px; /* Same as the width of the sidenav */
+	
+	padding: 0px 0px;
+	background-color: #F0F0F0;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+	.sidebar a {
+		font-size: 18px;
+	}
+}
+
+.sideNavTop {
+	/* background-color: cadetblue; */
+	background-image: url("bg12.png");
+	background-size: cover;
+	color: white;
+	/* 	margin: 5px 0px 15px 0; */
+}
+
+.sideNavTop i {
+	margin: 0 0 15px 0;
+}
+
+.sideNavTop p {
+	padding: 0;
+	margin: 1px 10px;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.sideUserIcon {
+	padding-top: 15px;
+	font-size: 70px;
+}
+
+.main-nav p {
+	background-color: #E0E0E0;
+	margin: 0;
+	padding: 5px 5px;
+	font-size: 13px;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 5px 0 5px 0;
+	padding-left: 10px;
+}
+
+.flex-container>div {
+	display: flex;
+	width: auto;
+	margin: 10px 25px;
+	text-align: center;
+	line-height: 75px;
+	color: white;
+	font-size: large;
+	font-family: sans-serif;
+	background-color: aqua;
+	padding-inline-end: 10px;
+}
+
+.flex-container>div:nth-child(1) {
+	background-color: #FF1493;
+}
+
+.flex-container>div:nth-child(2) {
+	background-color: #0cbfd5;
+}
+
+.flex-container>div:nth-child(3) {
+	background-color: #8bc34a;
+}
+
+.flex-container>div:nth-child(4) {
+	background-color: #ff9800;
+}
+
+.flex-container>div i {
+	padding: 0px 12px;
+}
+
+.felx-container-child {
+	height: 100%;
+}
+
+.felx-container-child a:hover{
+	color: black	 !important;
+}
+
+.card1{
+border-radius: 25px;
+background-color: white;
+position: relative	;
+margin-left: 20px;
+margin-right:10px;
+margin-block-end: 20px;
+display: block;		}
+
+
+.card2{
+border-radius: 25px;
+background-color: white;
+margin-right:10px;
+margin-left: 20px;}
+
+/* /////////////////////table CSS//////////////////////////////*/
+
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f44336;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    padding: 20px 20px;
+   }

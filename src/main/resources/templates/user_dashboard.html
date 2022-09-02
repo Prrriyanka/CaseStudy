@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/Base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section>
+		<div class="card text-center">
+			<div class="card-body">
+				<img th:src="@{../../img/welcome.png}" alt="Welcome Photo" title="Welcome"/>
+				
+				<div class="mt-5">
+					<button class="btn btn-lg btn-block btn-success">Get Start</button>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+</body>
+</html>
